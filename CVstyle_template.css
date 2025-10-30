@@ -1,0 +1,89 @@
+/* style sheet for CV */
+
+.site_container {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5px;
+  text-align: justify;
+  
+}
+/* styling for the name at the top of the CV */
+.header {
+  text-align: center;
+  font-size: 18pt;
+  color: black;
+  border-bottom: 3.5px solid #597963;
+  padding: 0;
+  margin: 0px;
+}
+
+
+/* overall layout */
+.layout {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: 25%, 75%;
+  font-size: 11pt;
+}
+
+.layout a {
+  color: #597963;
+}
+
+.layout a:hover {
+  color: #699978;
+}
+
+/*column 1*/
+
+.Column1 {
+  grid-row: span 3 / span 3;
+  border-right: 3px solid #597963; /* adds a right border to elements in the first column only */
+  padding-right: 5px;
+  margin: 7px;
+}
+
+/* using the heading style tag to put a seperator line between sections in the first column */
+.Column1 h3 {
+   border-bottom: 2px solid #597963;
+   margin-right: 80px;
+}
+
+/* column 2, row1  (Personal Statement) will already be in the correct place, but for the other two, you need to specify that you want them to start in column 2, otherwise 
+they'll try to shift into 1, displacing the rows already there */
+
+.PersonalStatement {
+  font-size: 12pt;
+  margin: 0%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.ResearchExp {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-start: 2;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.ResearchExp details {
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.Extracurricular {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+  
+
+
+
+
+
+
+
+
